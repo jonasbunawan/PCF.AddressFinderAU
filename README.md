@@ -11,3 +11,5 @@ This PCF Control will bind the full address to a specific field and map the gran
 * State
 * Postcode
 * Country - note: country is hardcoded to "Australia" as the AddressFinder API only returns a specific country
+* Latitude
+* Longitude
