@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Andz" constructor="AddressFinderAU" version="0.0.1" display-name-key="AddressFinderAU" description-key="AddressFinder AU Data" control-type="standard">
+  <control namespace="Andz" constructor="AddressFinderAU" version="0.0.2" display-name-key="AddressFinderAU" description-key="AddressFinder AU Data" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="address_fullname" display-name-key="address_fullname" description-key="address_fullname" of-type="SingleLine.Text" usage="bound" required="true" /> 
     <property name="address_line_1" display-name-key="address_line_1" description-key="address_line_1" of-type="SingleLine.Text" usage="bound" required="true" /> 
@@ -9,6 +9,8 @@
     <property name="suburb" display-name-key="suburb" description-key="suburb" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="postcode" display-name-key="postcode" description-key="postcode" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="country" display-name-key="country" description-key="country" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="latitude" display-name-key="latitude" description-key="latitude" of-type="Decimal" usage="bound" required="false" />
+    <property name="longitude" display-name-key="longitude" description-key="longitude" of-type="Decimal" usage="bound" required="false" />
     <property name="afKey" display-name-key="Address Finder Key" description-key="Address Finder Key" of-type="SingleLine.Text" usage="input" required="true" />
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 

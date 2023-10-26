@@ -27,6 +27,10 @@ export class AddressFinderAU implements ComponentFramework.StandardControl<IInpu
 
 	private _country: string;
 
+	private _latitude: string;
+
+	private _longitude: string;
+
 	private widget: any;
 
 	private AddressFinder: any;
@@ -105,7 +109,9 @@ export class AddressFinderAU implements ComponentFramework.StandardControl<IInpu
 			suburb:this._suburb,
 			state:this._state,
 			postcode:this._postcode,
-			country:this._country
+			country:this._country,
+			latitude: +this._latitude,
+			longitude: +this._longitude
 		};
 	}
 
@@ -139,6 +145,8 @@ export class AddressFinderAU implements ComponentFramework.StandardControl<IInpu
 			this._suburb = metaData.locality_name;
 			this._state = metaData.state_territory;
 			this._postcode = metaData.postcode;
+			this._longitude = metaData.longitude;
+			this._latitude = metaData.latitude;
 			this._country = "Australia";
 			this._notifyOutputChanged();
 		});
